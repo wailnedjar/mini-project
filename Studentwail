@@ -1,0 +1,74 @@
+import java.util.Date;
+
+public class Student extends Person{
+	
+	private String Studentlogin,promoton;
+	private String StudentID;
+	private String Password;
+	private int section,groupe;
+	
+	public Student (String name,String gender,String phone,Date birth,int ID,Adresse adresse,String dress) {
+		super(name,gender,phone,birth,ID,adresse,dress);
+	}
+
+	public String getStudentlogin() {
+		return Studentlogin;
+	}
+
+	public void setStudentlogin(String studentlogin) {
+		Studentlogin = studentlogin;
+	}
+
+	public String getPromoton() {
+		return promoton;
+	}
+
+	public void setPromoton(String promoton) {
+		this.promoton = promoton;
+	}
+
+	public String getStudentID() {
+		return StudentID;
+	}
+
+	public void setStudentID(String studentID) {
+		StudentID = studentID;
+	}
+
+	public String getPassword() {
+		return Password;
+	}
+
+	public void setPassword(String password) {
+		Password = password;
+	}
+
+	public int getSection() {
+		return section;
+	}
+
+	public void setSection(int section) {
+		this.section = section;
+	}
+
+	public int getGroupe() {
+		return groupe;
+	}
+
+	public void setGroupe(int groupe) {
+		this.groupe = groupe;
+	}
+	
+	public void Displayinfo() {
+		this.DisplayInfo();
+		System.out.println(this.getStudentID());
+		System.out.println(this.getStudentlogin());
+		System.out.println(this.getGroupe());
+		System.out.println(this.getSection());
+		System.out.println(this.getPromoton());
+	}
+	
+	
+	
+
+}
