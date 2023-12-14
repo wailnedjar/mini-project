@@ -1,0 +1,16 @@
+import java.util.Date;
+
+public class SuperAdmin extends Person{
+	final static String SuperAdminLogin="mortada";
+	final static String SuperAdminpassword="1234";
+	final static String SuperAdminID="1";
+	public SuperAdmin() {
+		super();
+	}
+
+	public SuperAdmin(String name, String gender, String phone, Date birth, int ID, Adresse adresse, String dress) {
+		super(name, gender, phone, birth, ID, adresse, dress);
+	}
+	
+
+}
