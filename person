@@ -1,11 +1,19 @@
+package Student_Managment_System;
+import java.util.Date;
+
 public class Person {
 	private String Name,gender,phone;
 	private Date birth;
 	private int ID;
 	private Adresse adresse;
+	private String dress;
 	private String email;
-	
 
+	public Person()
+	{
+		
+	}
+	
 	public Person (String name,String gender,String phone,Date birth,int ID,Adresse adresse,String email) {
 		this.Name=name;
 		this.gender=gender;
@@ -13,68 +21,91 @@ public class Person {
 		this.birth=birth;
 		this.ID=ID;
 		this.adresse=adresse;
+		this.dress=dress;
 		this.email=email;
 	}
+
 	
 	public String getName() {
 		return Name;
 	}
 
+
 	public void setName(String name) {
 		Name = name;
 	}
+
 
 	public String getGender() {
 		return gender;
 	}
 
+
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+
 
 	public String getPhone() {
 		return phone;
 	}
 
+
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+
 
 	public Date getBirth() {
 		return birth;
 	}
 
+
 	public void setBirth(Date birth) {
 		this.birth = birth;
 	}
+
 
 	public int getID() {
 		return ID;
 	}
 
+
 	public void setID(int iD) {
 		ID = iD;
 	}
+
 
 	public Adresse getAdresse() {
 		return adresse;
 	}
 
+
 	public void setAdresse(Adresse adresse) {
 		this.adresse = adresse;
 	}
 
-	public String getemail() {
+
+	public String getDress() {
+		return dress;
+	}
+
+
+	public void setDress(String dress) {
+		this.dress = dress;
+	}
+
+
+	public String getEmail() {
 		return email;
 	}
 
-	public void setemail(String dress) {
+
+	public void setEmail(String email) {
 		this.email = email;
 	}
 
-	public Person () {
-		
-	}
+
 	public void DisplayInfo() {
 		System.out.println(this.getName());
 		System.out.println(this.getGender());
