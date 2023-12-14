@@ -3,17 +3,17 @@ public class Person {
 	private Date birth;
 	private int ID;
 	private Adresse adresse;
-	private String dress;
+	private String email;
 	
 
-	public Person (String name,String gender,String phone,Date birth,int ID,Adresse adresse,String dress) {
+	public Person (String name,String gender,String phone,Date birth,int ID,Adresse adresse,String email) {
 		this.Name=name;
 		this.gender=gender;
 		this.phone=phone;
 		this.birth=birth;
 		this.ID=ID;
 		this.adresse=adresse;
-		this.dress=dress;
+		this.email=email;
 	}
 	
 	public String getName() {
@@ -64,12 +64,12 @@ public class Person {
 		this.adresse = adresse;
 	}
 
-	public String getDress() {
-		return dress;
+	public String getemail() {
+		return email;
 	}
 
-	public void setDress(String dress) {
-		this.dress = dress;
+	public void setemail(String dress) {
+		this.email = email;
 	}
 
 	public Person () {
