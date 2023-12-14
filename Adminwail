@@ -1,0 +1,54 @@
+import java.util.Date;
+
+public class Admin extends Person{
+	 private String AdminLogin;
+	 private String Adminpassword;
+	 private String AdminID;
+     private int Level;
+	 
+    public Admin(String name, String gender, String phone, Date birth,int ID, Adresse adresse, String dress,String AdminLogin,String Adminpassword,String AdminID) {
+		super(name, gender, phone, birth, ID, adresse, dress);
+		this.AdminLogin=AdminLogin;
+		this.Adminpassword=Adminpassword;
+		this.AdminID=AdminID;
+	}
+    
+	public int getLevel() {
+		return Level;
+	}
+
+	public void setLevel(int level) {
+		Level = level;
+	}
+
+	public String getAdminLogin() {
+		return AdminLogin;
+	}
+
+	public void setAdminLogin(String adminLogin) {
+		AdminLogin = adminLogin;
+	}
+
+	public String getAdminpassword() {
+		return Adminpassword;
+	}
+
+	public void setAdminpassword(String adminpassword) {
+		Adminpassword = adminpassword;
+	}
+
+	public String getAdminID() {
+		return AdminID;
+	}
+
+	public void setAdminID(String adminID) {
+		AdminID = adminID;
+	}
+
+	public Admin() {
+		super();
+	}
+
+	
+
+}
