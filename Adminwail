@@ -1,16 +1,24 @@
-import java.util.Date;
+package Student_Managment_System;
+
+import java.util.*;
 
 public class Admin extends Person{
-	 private String AdminLogin;
-	 private String Adminpassword;
-	 private String AdminID;
+
      private int Level;
-	 
-    public Admin(String name, String gender, String phone, Date birth,int ID, Adresse adresse, String dress,String AdminLogin,String Adminpassword,String AdminID) {
+     final Map<Integer, List<String>> PermitionList = InitialisePermition();
+     ArrayList<String> Lev1=new ArrayList<String>();
+     public static Map<Integer, List<String>> InitialisePermition() {
+    	    final Map<Integer, List<String>> PermitionList = new HashMap<>();
+    	    PermitionList.put(1, new ArrayList<>(List.of("Adds","Rmst")));
+    	    PermitionList.put(2, new ArrayList<>(List.of("Addt","Rmt")));
+    	    PermitionList.put(3, new ArrayList<>(List.of("Adds","Rmst","Addt","Rmt")));
+    	    return PermitionList;
+    	}
+    public Admin(String name, String gender, String phone, Date birth,int ID, Adresse adresse, String dress,String AdminID,int L,ArrayList<Integer> Per) {
 		super(name, gender, phone, birth, ID, adresse, dress);
-		this.AdminLogin=AdminLogin;
-		this.Adminpassword=Adminpassword;
-		this.AdminID=AdminID;
+		this.Level=L;
+//		this.Permition=Per;
+		
 	}
     
 	public int getLevel() {
@@ -20,35 +28,15 @@ public class Admin extends Person{
 	public void setLevel(int level) {
 		Level = level;
 	}
-
-	public String getAdminLogin() {
-		return AdminLogin;
-	}
-
-	public void setAdminLogin(String adminLogin) {
-		AdminLogin = adminLogin;
-	}
-
-	public String getAdminpassword() {
-		return Adminpassword;
-	}
-
-	public void setAdminpassword(String adminpassword) {
-		Adminpassword = adminpassword;
-	}
-
-	public String getAdminID() {
-		return AdminID;
-	}
-
-	public void setAdminID(String adminID) {
-		AdminID = adminID;
-	}
-
 	public Admin() {
 		super();
 	}
-
+	public void DispalInfo()
+	{
+		super.DisplayInfo();
+		///contine level
+	}
 	
 
 }
+
