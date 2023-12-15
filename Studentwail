@@ -6,8 +6,19 @@ import java.util.*;
 		
 		private String promotion;
 		private int section,groupe;
+		private ArrayList<Module> ModuleStudy;
+		private  float GradeFinal;
+		public float getGradeFinal()
+{
+return this.GradeFinal;
+}
+public void SetGradeFinal(float X)
+{
+this.GradeFinal=X;
+}
 		public Student (String name,String gender,String phone,Date birth,int ID,Adresse adresse,String dress) {
-			super(name,gender,phone,birth,ID,adresse,dress);
+			super(name,gender,phone,birth,ID,adresse,dress
+			this.ModuleStudy=new ArrayList();
 		}
 		public String getPromotion() {
 			return promotion;
