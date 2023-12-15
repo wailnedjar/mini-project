@@ -1,6 +1,6 @@
 package mini;
 import java.util.ArrayList;
-public class TP {
+public class T {
 	private int NumbreOfWeeks;
 	private int NumbreOfScience;
 	private String TeacherResponsable;
