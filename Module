@@ -7,7 +7,8 @@ public class Module{
     int Hours;
     int Coef;
     int Credits;
-
+    T Td;
+    T Tp;
     public Module(String moduleName, String niveau, String formation, String prof, int hours, int coef, int credits) {
         this.moduleName = moduleName;
         Niveau = niveau;
