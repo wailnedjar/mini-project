@@ -2,17 +2,17 @@ public class Module{
 
     String moduleName;
     String Niveau;
-    String Formation;
+    Cycle Formation;
     String Prof;
     int Hours;
     int Coef;
     int Credits;
     T Td;
     T Tp;
-    public Module(String moduleName, String niveau, String formation, String prof, int hours, int coef, int credits) {
+    public Module(String moduleName, String niveau, Cycle formation, String prof, int hours, int coef, int credits) {
         this.moduleName = moduleName;
         Niveau = niveau;
-        Formation = formation;
+        this.Formation = formation;
         Prof = prof;
         Hours = hours;
         Coef = coef;
